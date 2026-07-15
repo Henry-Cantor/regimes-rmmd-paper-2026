@@ -1,0 +1,207 @@
+{
+ "machines": [
+  "CMOD",
+  "D3D",
+  "HL2A",
+  "KSTR",
+  "NSTX"
+ ],
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "missing": [],
+ "a_minor_per_machine": {
+  "CMOD": 0.21,
+  "D3D": 0.67,
+  "HL2A": 0.22,
+  "KSTR": 0.5,
+  "NSTX": 0.67
+ },
+ "r_major_per_machine": {
+  "CMOD": 0.68,
+  "D3D": 1.67,
+  "HL2A": 0.67,
+  "KSTR": 1.8,
+  "NSTX": 0.85
+ },
+ "shot_counts": {
+  "CMOD": {
+   "0": 30,
+   "1": 30,
+   "2": 30
+  },
+  "D3D": {
+   "0": 72,
+   "1": 72,
+   "2": 72
+  },
+  "HL2A": {
+   "0": 73,
+   "1": 73,
+   "2": 73
+  },
+  "KSTR": {
+   "0": 50,
+   "1": 50,
+   "2": 50
+  },
+  "NSTX": {
+   "0": 86,
+   "1": 86,
+   "2": 86
+  }
+ },
+ "offdiag_frac_per_model": {
+  "CMOD": {
+   "0": 0.9890986680984497,
+   "1": 0.989934116601944,
+   "2": 0.9886728525161743
+  },
+  "D3D": {
+   "0": 0.9839832782745361,
+   "1": 0.9867145717144012,
+   "2": 0.981593668460846
+  },
+  "HL2A": {
+   "0": 0.9846009016036987,
+   "1": 0.9837303161621094,
+   "2": 0.9832420945167542
+  },
+  "KSTR": {
+   "0": 0.9878852963447571,
+   "1": 0.9895593822002411,
+   "2": 0.9861036539077759
+  },
+  "NSTX": {
+   "0": 0.9861438870429993,
+   "1": 0.9889393150806427,
+   "2": 0.9872429966926575
+  }
+ },
+ "per_family": {
+  "cons_freq_raw": {
+   "N0_raw": {
+    "F": 0.34161546186193825,
+    "F_CI95": [
+     0.20563802992840768,
+     4.523866733839212
+    ],
+    "between_var": 1.0123983777404e-05,
+    "within_seed_var": 2.9635612453279657e-05,
+    "mean_sorted_L2_between_machines": 0.005980097316828724,
+    "mean_OT_between_machines": 0.0023593543878727254
+   },
+   "N1_gyrobohm": {
+    "F": 7.243909214817523,
+    "F_CI95": [
+     6.596901304581804,
+     54.71375291427149
+    ],
+    "between_var": 3.797201430758219e-05,
+    "within_seed_var": 5.241921997862794e-06,
+    "mean_sorted_L2_between_machines": 0.006857398944966457,
+    "mean_OT_between_machines": 0.002766358834983967
+   },
+   "N2_wrong_R_over_cs": {
+    "F": 4.408496995527586,
+    "F_CI95": [
+     4.008081794678945,
+     50.04947909823518
+    ],
+    "between_var": 0.0002037580313399414,
+    "within_seed_var": 4.621938659324405e-05,
+    "mean_sorted_L2_between_machines": 0.014779126045544025,
+    "mean_OT_between_machines": 0.005709581939017401
+   },
+   "N3_scrambled": {
+    "F": 5.366382647935108,
+    "F_CI95": [
+     4.562589774178759,
+     59.81061802524481
+    ],
+    "between_var": 5.369800563755859e-05,
+    "within_seed_var": 1.0006368124315177e-05,
+    "mean_sorted_L2_between_machines": 0.009063582664633738,
+    "mean_OT_between_machines": 0.0036997827932561656
+   }
+  },
+  "diss_rates": {
+   "N0_raw": {
+    "F": 0.41742857216509754,
+    "F_CI95": [
+     0.19008080185822818,
+     8.925064568521636
+    ],
+    "between_var": 4.569130658048179e-05,
+    "within_seed_var": 0.00010945898103252457,
+    "mean_sorted_L2_between_machines": 0.04404691928265913,
+    "mean_OT_between_machines": 0.01557703825151185
+   },
+   "N1_gyrobohm": {
+    "F": 44.702614521716896,
+    "F_CI95": [
+     39.9444758651732,
+     1047.871120220528
+    ],
+    "between_var": 0.0018453050586042274,
+    "within_seed_var": 4.127957690271446e-05,
+    "mean_sorted_L2_between_machines": 0.0643494505977992,
+    "mean_OT_between_machines": 0.022760719479023698
+   },
+   "N2_wrong_R_over_cs": {
+    "F": 58.81082291692356,
+    "F_CI95": [
+     52.64786301021931,
+     1553.1130044251556
+    ],
+    "between_var": 0.012179304789615394,
+    "within_seed_var": 0.00020709291464955545,
+    "mean_sorted_L2_between_machines": 0.15115776737479672,
+    "mean_OT_between_machines": 0.053463747310386465
+   },
+   "N3_scrambled": {
+    "F": 142.617214386778,
+    "F_CI95": [
+     128.7248306956814,
+     1001.6622682392191
+    ],
+    "between_var": 0.002098834262144342,
+    "within_seed_var": 1.4716555280872953e-05,
+    "mean_sorted_L2_between_machines": 0.0608494031943847,
+    "mean_OT_between_machines": 0.021595772187952705
+   }
+  }
+ },
+ "VERDICT_1": {
+  "prediction_if_true": "F(N0) raw > 1 (diverge); F(N1) GB ~1 (collapse to seed noise); F(N2),F(N3) > 1 (wrong norms don't collapse).",
+  "refuted_if": "F(N1) still >>1 (no real collapse) OR N2/N3 collapse ~as well as N1 (trivial variance-reduction, not physics).",
+  "F_diss_rates": {
+   "N0_raw": 0.41742857216509754,
+   "N1_gyrobohm": 44.702614521716896,
+   "N2_wrong": 58.81082291692356,
+   "N3_scrambled": 142.617214386778
+  },
+  "F_CI95": {
+   "N0": [
+    0.19008080185822818,
+    8.925064568521636
+   ],
+   "N1": [
+    39.9444758651732,
+    1047.871120220528
+   ],
+   "N2": [
+    52.64786301021931,
+    1553.1130044251556
+   ],
+   "N3": [
+    128.7248306956814,
+    1001.6622682392191
+   ]
+  },
+  "VERDICT": "REFUTED",
+  "note": "INCONCLUSIVE if seed noise swamps between-machine signal (overfitting on small-data machines) -> report shot_counts + per-model offdiag_frac and STOP (spec step 7). If offdiag_frac now DIFFERS across independently-trained models (it was 0.9802 identical when shared), that ALONE shows the prior identity was an artifact of sharing."
+ }
+}

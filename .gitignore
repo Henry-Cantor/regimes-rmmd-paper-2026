@@ -1,0 +1,37 @@
+# Python environment and virtualenvs
+.venv/
+.torchenv/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Large scratch or temporary output directories
+scratch/
+
+# Editor/project-specific files
+.vscode/
+.idea/
+
+# Disabled dataset and model cache files
+*.pt
+*.pth
+*.npz
+*.h5
+*.ckpt
+*.tar.gz
+*.zip
+
+# local result staging (canonical committed results live in each dir's results/)
+JSON_RESULTS/
+STRONG_RMMD/hybrid_analysis/results/per_shot.json
+.pytest_cache/

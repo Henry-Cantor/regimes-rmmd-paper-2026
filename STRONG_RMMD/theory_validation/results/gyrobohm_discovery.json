@@ -1,0 +1,55 @@
+{
+ "STRONG_RMMD/theory_validation/results/sut_report_east.json": {
+  "operating_point_spread": {
+   "omega_d_cv": 0.5599566979440288,
+   "omega_t_cv": 0.47005961274247804,
+   "omega_d_range_ratio": 12.622799693405307,
+   "n_machines": 6
+  },
+  "landscape_universality": {
+   "pairwise_rms_distance_mean": 0.0007660512316206823,
+   "holdout_to_train_rms_distance_mean": 0.00047541298674412915
+  },
+  "universal_operator_families": {
+   "res_weights": 0.0025453352136537433,
+   "diss_rates": 0.004325813381001353,
+   "jac_mu_abs": 0.005136470310389996
+  },
+  "machine_specific_families": {
+   "cons_freq_raw": 0.349603533744812,
+   "cons_freq_over_wd": 0.7004039585590363,
+   "cons_freq_over_wt": 0.6285268068313599
+  },
+  "nontriviality_ratio_opCV_over_landscapeRMS": 730.9650775697686
+ },
+ "STRONG_RMMD/theory_validation/results/sut_report_augd.json": {
+  "operating_point_spread": {
+   "omega_d_cv": 0.8668368335146771,
+   "omega_t_cv": 0.45432265052873455,
+   "omega_d_range_ratio": 11.23019659493271,
+   "n_machines": 6
+  },
+  "landscape_universality": {
+   "pairwise_rms_distance_mean": 0.0007660517963959049,
+   "holdout_to_train_rms_distance_mean": 0.0004705944928726872
+  },
+  "universal_operator_families": {
+   "res_weights": 0.0025453352136537433,
+   "diss_rates": 0.003955279942601919,
+   "jac_mu_abs": 0.005136466817930341
+  },
+  "machine_specific_families": {
+   "cons_freq_raw": 0.349603533744812,
+   "cons_freq_over_wd": 0.7004039585590363,
+   "cons_freq_over_wt": 0.6285268068313599
+  },
+  "nontriviality_ratio_opCV_over_landscapeRMS": 1131.5642592223428
+ },
+ "VERDICT": {
+  "machines_differ_operating_point_cv": 0.713396765729353,
+  "landscape_pairwise_rms": 0.0007660515140082936,
+  "holdout_landscape_rms": 0.00047300373980840816,
+  "gyrobohm_universality_supported_NONtrivial": true,
+  "interpretation": "NON-TRIVIAL gyro-Bohm universality: machines differ materially in operating frequency yet the normalized resonance response collapses to one curve and contains the held-out machine -> the learned operator confirms gyro-Bohm similarity and uses it for zero-shot transfer. STILL CHECK (physics, for the paper): does the universal response SHAPE match the theoretical gyro-Bohm prediction, not just collapse? That is the difference between 'consistent with' and 'confirms' -- a domain expert call."
+ }
+}

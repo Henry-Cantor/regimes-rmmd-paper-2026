@@ -1,0 +1,47 @@
+{
+ "horizon": 50,
+ "per_dataset": {
+  "augd": {
+   "n_shots": 173,
+   "dgknet_win_rate": 0.3063583815028902,
+   "auc_per_feature": {
+    "driver_growth3": 0.7127358490566038,
+    "driver_max_slope": 0.7122641509433962,
+    "driver_ptp": 0.8328616352201258,
+    "driver_spec_entropy": 0.705503144654088,
+    "driver_std": 0.8256289308176101,
+    "ni_curvature": 0.5135220125786164,
+    "ni_mean0": 0.5251572327044025,
+    "ni_peaking": 0.7946540880503145,
+    "ni_std0": 0.5561320754716981
+   },
+   "max_feature_auc": 0.8328616352201258,
+   "r2_predict_nrmse_from_inputs": 0.39655245788596316
+  },
+  "east": {
+   "n_shots": 553,
+   "dgknet_win_rate": 0.24954792043399637,
+   "auc_per_feature": {
+    "driver_growth3": 0.6702985856469356,
+    "driver_max_slope": 0.6702985856469356,
+    "driver_ptp": 0.6698271346254584,
+    "driver_spec_entropy": 0.6632617426226646,
+    "driver_std": 0.6763401431814213,
+    "ni_curvature": 0.5263488737558931,
+    "ni_mean0": 0.5456609044875153,
+    "ni_peaking": 0.5092369477911647,
+    "ni_std0": 0.5505849484896106
+   },
+   "max_feature_auc": 0.6763401431814213,
+   "r2_predict_nrmse_from_inputs": 0.26416458037164525
+  }
+ },
+ "VERDICT_4": {
+  "claim_preregistered": "max AUC < 0.60 and low R^2 -> forecast difficulty not explained by observed inputs.",
+  "refuted_if": "some feature AUC > 0.65 -> a router IS possible; build it (SOTA combo becomes real).",
+  "max_feature_auc": 0.8328616352201258,
+  "max_r2_predict_nrmse": 0.39655245788596316,
+  "router_possible_auc>0.65": true,
+  "VERDICT": "REFUTED->build router (better paper)"
+ }
+}

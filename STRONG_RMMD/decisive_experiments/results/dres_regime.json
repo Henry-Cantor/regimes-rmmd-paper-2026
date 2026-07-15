@@ -1,0 +1,176 @@
+{
+ "EXP2_0_regime_split_from_committed": {
+  "east": {
+   "pooled_by_horizon": {
+    "20": {
+     "full": 0.1972311593877504,
+     "abl_dres": 0.1499368184573362,
+     "delta_dres_helps": -0.04729434093041421
+    },
+    "50": {
+     "full": 0.35076850462256276,
+     "abl_dres": 0.26864262541662337,
+     "delta_dres_helps": -0.08212587920593939
+    },
+    "100": {
+     "full": 0.493514212029299,
+     "abl_dres": 0.35365509650723514,
+     "delta_dres_helps": -0.13985911552206387
+    }
+   },
+   "per_quartile": {
+    "50": {
+     "q1": {
+      "full": 0.15177007164056242,
+      "abl_dres": 0.09304807765458711,
+      "delta_dres_helps": -0.0587219939859753
+     },
+     "q2": {
+      "full": 0.23743152887063398,
+      "abl_dres": 0.134026444028559,
+      "delta_dres_helps": -0.10340508484207497
+     },
+     "q3": {
+      "full": 0.33058173177603967,
+      "abl_dres": 0.16712608166513854,
+      "delta_dres_helps": -0.16345565011090113
+     },
+     "q4": {
+      "full": 0.6857538134739812,
+      "abl_dres": 0.6834197299693316,
+      "delta_dres_helps": -0.0023340835046495867
+     }
+    },
+    "100": {
+     "q1": {
+      "full": 0.2669707648997058,
+      "abl_dres": 0.17403330825017582,
+      "delta_dres_helps": -0.09293745664952996
+     },
+     "q2": {
+      "full": 0.4811928433019458,
+      "abl_dres": 0.28198554821692523,
+      "delta_dres_helps": -0.19920729508502055
+     },
+     "q3": {
+      "full": 0.49359553858193844,
+      "abl_dres": 0.27256160411033425,
+      "delta_dres_helps": -0.2210339344716042
+     },
+     "q4": {
+      "full": 0.734320410682977,
+      "abl_dres": 0.6876436914180862,
+      "delta_dres_helps": -0.04667671926489081
+     }
+    }
+   },
+   "paired_p_pooled": {
+    "50": {
+     "delta": -0.08212587920593939,
+     "p": 3.833543022228583e-21
+    },
+    "100": {
+     "delta": -0.13985911552206387,
+     "p": 1.751591963345519e-15
+    }
+   },
+   "note": "per-quartile paired p NOT in committed report (needs an extrap rerun that dumps per-shot errors, or the ablation harness with --stratified-pvalues) -> NOT FOUND here"
+  },
+  "augd": {
+   "pooled_by_horizon": {
+    "20": {
+     "full": 0.18823260760546118,
+     "abl_dres": 0.18370532996106362,
+     "delta_dres_helps": -0.004527277644397559
+    },
+    "50": {
+     "full": 0.3772711779556474,
+     "abl_dres": 0.40773087569322386,
+     "delta_dres_helps": 0.030459697737576452
+    },
+    "100": {
+     "full": 1.3073526745845179,
+     "abl_dres": 1.362826759155582,
+     "delta_dres_helps": 0.055474084571064175
+    }
+   },
+   "per_quartile": {
+    "50": {
+     "q1": {
+      "full": 0.03551019066075934,
+      "abl_dres": 0.12488167634364444,
+      "delta_dres_helps": 0.08937148568288511
+     },
+     "q2": {
+      "full": 0.08328981114351734,
+      "abl_dres": 0.12443980348067203,
+      "delta_dres_helps": 0.04114999233715469
+     },
+     "q3": {
+      "full": 0.3042238784348628,
+      "abl_dres": 0.2852079825752999,
+      "delta_dres_helps": -0.019015895859562926
+     },
+     "q4": {
+      "full": 1.013266593723738,
+      "abl_dres": 1.0213294594497802,
+      "delta_dres_helps": 0.008062865726042201
+     }
+    },
+    "100": {
+     "q1": {
+      "full": 0.08471885376276096,
+      "abl_dres": 0.16715080538351823,
+      "delta_dres_helps": 0.08243195162075727
+     },
+     "q2": {
+      "full": 0.10553662396453833,
+      "abl_dres": 0.19353713581448292,
+      "delta_dres_helps": 0.08800051184994459
+     },
+     "q3": {
+      "full": 1.2037481366504548,
+      "abl_dres": 1.1491077150030489,
+      "delta_dres_helps": -0.0546404216474059
+     },
+     "q4": {
+      "full": 3.806792416088414,
+      "abl_dres": 3.913671151294109,
+      "delta_dres_helps": 0.10687873520569502
+     }
+    }
+   },
+   "paired_p_pooled": {
+    "50": {
+     "delta": 0.030459697737576452,
+     "p": 1.9211732806135398e-08
+    },
+    "100": {
+     "delta": 0.055474084571064175,
+     "p": 1.956546940814716e-05
+    }
+   },
+   "note": "per-quartile paired p NOT in committed report (needs an extrap rerun that dumps per-shot errors, or the ablation harness with --stratified-pvalues) -> NOT FOUND here"
+  }
+ },
+ "EXP2_1_dres_vs_independent_drive": {
+  "dataset": "augd",
+  "n": 173,
+  "spearman_dres_vs_PINJ": 0.8108941227732687,
+  "perm_p_PINJ": 0.0,
+  "spearman_dres_vs_PINJ_variability": 0.42367114601054096,
+  "perm_p_PINJ_variability": 0.0,
+  "dres_tracks_independent_drive": true,
+  "context": "theorems_report EDT NBI split had d_res_high_PINJ=0.9702 vs low=0.9709 (nearly flat) -> a flat correlation here would mean the learned D_res does NOT track the drive it should."
+ },
+ "VERDICT_2": {
+  "prediction_if_true": "abl_dres delta > 0 (p<0.05) on AUGD (dynamic), incl q4; D_res validated 'in regime' iff it ALSO correlates with an independent drive proxy (2.1).",
+  "refuted_if": "abl_dres <=0 / n.s. across AUGD quartiles+horizons -> demote D_res to synthetic-only (EXP-3).",
+  "augd_dres_helps_pooled_p<0.05": true,
+  "augd_q4_delta_T100": 0.10687873520569502,
+  "dres_tracks_independent_drive_2.1": true,
+  "VERDICT_regime_split": "SUPPORTED",
+  "VERDICT_mechanism_2.1": "SUPPORTED",
+  "reading": "regime split (2.0) is the paper claim; 2.1 is the honest mechanism check (rule 4). If 2.0 SUPPORTED but 2.1 REFUTED -> 'D_res helps the dynamic regime empirically, but its learned magnitude does not track the drive; present as an emergent regularizer, not a driven-turbulence readout.'"
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "baselines": {
+  "rmmd": 0.34297683612806285,
+  "dgknet": 0.38888226618363414,
+  "oracle": 0.26325058051530287
+ },
+ "features": {
+  "activity": {
+   "auc": 0.5353967783428532,
+   "theta": 3.0355825201626065,
+   "hybrid_fit": 0.3109445700460921,
+   "hybrid_holdout": {
+    "augd": 0.3885446076650215,
+    "east": 0.3535608795781898
+   }
+  },
+  "driver_ptp_norm": {
+   "auc": 0.5445342319786495,
+   "theta": 0.06974016175128044,
+   "hybrid_fit": 0.33026700229664374,
+   "hybrid_holdout": {
+    "augd": 0.353482708134467,
+    "east": 0.3896476618828388
+   }
+  },
+  "driver_std_mean": {
+   "auc": 0.547481093927856,
+   "theta": 0.44920488215550664,
+   "hybrid_fit": 0.33275791364358676,
+   "hybrid_holdout": {
+    "augd": 0.3911889156639083,
+    "east": 0.3606857589882073
+   }
+  },
+  "driver_max_slope": {
+   "auc": 0.5664271619482226,
+   "theta": 14.335061073303223,
+   "hybrid_fit": 0.33079757312743996,
+   "hybrid_holdout": {
+    "augd": 0.39047127375193214,
+    "east": 0.35472027309875365
+   }
+  },
+  "ni_peaking": {
+   "auc": 0.5868297642895428,
+   "theta": -1.180003080665363,
+   "hybrid_fit": 0.3242025165514074,
+   "hybrid_holdout": {
+    "augd": 0.4789588101979876,
+    "east": 0.44462226111267106
+   }
+  },
+  "ni_mean0": {
+   "auc": 0.5046119309196356,
+   "theta": 0.7627101616933942,
+   "hybrid_fit": 0.32295729625134917,
+   "hybrid_holdout": {
+    "augd": 0.4117044355759632,
+    "east": 0.36697179488261134
+   }
+  },
+  "geom_mean0": {
+   "auc": 0.4633464528363065,
+   "theta": 0.031056661265037793,
+   "hybrid_fit": 0.3286607587858212,
+   "hybrid_holdout": {
+    "augd": 0.38653090845795357,
+    "east": 0.33639138865042434
+   }
+  },
+  "geom_std0": {
+   "auc": 0.5884497042230085,
+   "theta": 0.5981918795632527,
+   "hybrid_fit": 0.31211001196288884,
+   "hybrid_holdout": {
+    "augd": 0.3601231262505193,
+    "east": 0.4410867970502616
+   }
+  },
+  "geom_ptp0": {
+   "auc": 0.546554130675725,
+   "theta": 4.222731828689575,
+   "hybrid_fit": 0.3154963602098544,
+   "hybrid_holdout": {
+    "augd": 0.36085219091671605,
+    "east": 0.4917055774690315
+   }
+  }
+ },
+ "verdict": {
+  "deployable_switch_works": false,
+  "winning_features": [],
+  "max_feature_auc": 0.5884497042230085,
+  "complementarity_exists": true,
+  "best_deployable_feature": "geom_mean0",
+  "oracle_threshold_helps": false,
+  "note": "NO deployable feature with real signal beats both alone (max feature AUC=0.59 ~ noise). If complementarity_exists is true the two models ARE complementary per-shot but that complementarity is NOT predictable from any input feature -> a feature-keyed switch OR blend cannot capture it; the only path to SOTA-everywhere is an end-to-end FUSED operator (or a fixed ensemble), NOT a learned per-shot selector."
+ }
+}

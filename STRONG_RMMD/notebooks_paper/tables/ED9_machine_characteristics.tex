@@ -1,0 +1,15 @@
+\begin{tabular}{lccccccc}
+\toprule
+Machine & shots & $R_0$(m) & $a$(m) & $R_0/a$ & off-diag frac & crossover $\omega_d$ & probe $\rho$ \\
+\midrule
+AUGD & 173 & -- & -- & -- & 0.980 & -- & 0.26 \\
+CMOD & 208 & 0.68 & 0.21 & 3.2 & 0.984 & 0.25 & -- \\
+D3D & 502 & 1.67 & 0.67 & 2.5 & 0.983 & 1.15 & 0.11 \\
+EAST & 553 & -- & -- & -- & 0.980 & 0.82 & 0.17 \\
+HL2A & 509 & 0.67 & 0.22 & 3.0 & 0.981 & 0.21 & 0.45 \\
+KSTR & 353 & 1.80 & 0.50 & 3.6 & 0.976 & -- & -0.13 \\
+NSTX & 603 & 0.85 & 0.67 & 1.3 & 0.971 & 0.70 & -0.08 \\
+\bottomrule
+\end{tabular}
+% R0,a from universality_emergent (5 training machines); shots+offdiag(fold) from universality_predictive;
+% crossover+probe from buttress. EAST/AUGD are holdouts (no R0/a in the emergent scan). q, B not in the pipeline.

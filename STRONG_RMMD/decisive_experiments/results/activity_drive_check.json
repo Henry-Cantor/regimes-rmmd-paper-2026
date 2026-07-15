@@ -1,0 +1,39 @@
+{
+ "horizon": 50,
+ "activity_def": "persistence NRMSE = ||ni[T]-ni[0]|| / ||ni[T]|| (model-free)",
+ "route_feature": "rel_ptp = ptp(PINJ)/mean|PINJ| (drive variability) vs mean(PINJ) (drive level)",
+ "by": {
+  "pooled": {
+   "n": 1036,
+   "spearman_rel_ptp_vs_activity": 0.47702719160519663,
+   "spearman_meanPINJ_vs_activity": 0.4279153282549366,
+   "auc_rel_ptp_predicts_q4": 0.7621703126931159,
+   "auc_meanPINJ_predicts_q4": 0.6814781856383636,
+   "rel_ptp_better": true
+  },
+  "pool": {
+   "n": 310,
+   "spearman_rel_ptp_vs_activity": 0.0722297469444313,
+   "spearman_meanPINJ_vs_activity": 0.06981731540961288,
+   "auc_rel_ptp_predicts_q4": 0.5523320070733864,
+   "auc_meanPINJ_predicts_q4": 0.5282935455349248,
+   "rel_ptp_better": true
+  },
+  "east": {
+   "n": 553,
+   "spearman_rel_ptp_vs_activity": 0.5401622774762337,
+   "spearman_meanPINJ_vs_activity": 0.6642409817541794,
+   "auc_rel_ptp_predicts_q4": 0.8335244847600181,
+   "auc_meanPINJ_predicts_q4": 0.7765961144128176,
+   "rel_ptp_better": false
+  },
+  "augd": {
+   "n": 173,
+   "spearman_rel_ptp_vs_activity": 0.3882983901247387,
+   "spearman_meanPINJ_vs_activity": -0.17139632227171803,
+   "auc_rel_ptp_predicts_q4": 0.5737847222222222,
+   "auc_meanPINJ_predicts_q4": 0.38211805555555556,
+   "rel_ptp_better": true
+  }
+ }
+}

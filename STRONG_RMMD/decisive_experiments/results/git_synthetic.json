@@ -1,0 +1,288 @@
+{
+ "EXP3A_linear_SDE": {
+  "eps_grid": [
+   0.0,
+   0.02,
+   0.05,
+   0.1,
+   0.2
+  ],
+  "T_grid": [
+   10.0,
+   25.0,
+   50.0,
+   100.0
+  ],
+  "dt": 0.01,
+  "n_paths": 1500,
+  "K": 16,
+  "sigma": 0.5,
+  "discretization": "EXACT (M=expm(A dt), process-noise cov Q_dt = P - M P M^T) -> no Euler bias, sampled AT stationarity so P_emp->P (sampling noise only)",
+  "per_eps": {
+   "0.0": {
+    "hurwitz": true,
+    "kl_rate_closed_form": 0.0,
+    "kl_closed_by_T": {
+     "10.0": 0.0,
+     "25.0": 0.0,
+     "50.0": 0.0,
+     "100.0": 0.0
+    },
+    "kl_mc_by_T": {
+     "10.0": 0.0,
+     "25.0": 0.0,
+     "50.0": 0.0,
+     "100.0": 0.0
+    },
+    "mc_linear_fit_R2": NaN,
+    "mc_slope": 0.0,
+    "slope_ratio_mc_over_closed": 1.0,
+    "P_lyap_vs_emp_relerr": 0.0055267887216490985,
+    "dres_omission_nrmse_by_t": {
+     "0.5": 0.0,
+     "1.0": 0.0,
+     "2.0": 0.0,
+     "5.0": 0.0
+    },
+    "dres_omission_nrmse_t5": 0.0
+   },
+   "0.02": {
+    "hurwitz": true,
+    "kl_rate_closed_form": 7.938474559746453e-05,
+    "kl_closed_by_T": {
+     "10.0": 0.0007938474559746453,
+     "25.0": 0.0019846186399366133,
+     "50.0": 0.003969237279873227,
+     "100.0": 0.007938474559746453
+    },
+    "kl_mc_by_T": {
+     "10.0": 0.000793144634965446,
+     "25.0": 0.0019826973520435938,
+     "50.0": 0.0039641081492570954,
+     "100.0": 0.007933668899074101
+    },
+    "mc_linear_fit_R2": 0.9999998435090259,
+    "mc_slope": 7.933950139470381e-05,
+    "slope_ratio_mc_over_closed": 0.9994300642721696,
+    "P_lyap_vs_emp_relerr": 0.005419917272547644,
+    "dres_omission_nrmse_by_t": {
+     "0.5": 0.0016130057971598033,
+     "1.0": 0.002362003951590455,
+     "2.0": 0.003178598598599567,
+     "5.0": 0.005066390607169798
+    },
+    "dres_omission_nrmse_t5": 0.005066390607169798
+   },
+   "0.05": {
+    "hurwitz": true,
+    "kl_rate_closed_form": 0.0004963947220352541,
+    "kl_closed_by_T": {
+     "10.0": 0.004963947220352542,
+     "25.0": 0.012409868050881352,
+     "50.0": 0.024819736101762704,
+     "100.0": 0.04963947220352541
+    },
+    "kl_mc_by_T": {
+     "10.0": 0.004963562128718504,
+     "25.0": 0.012400274358893059,
+     "50.0": 0.02482053324980244,
+     "100.0": 0.049626433420736984
+    },
+    "mc_linear_fit_R2": 0.9999999216982216,
+    "mc_slope": 0.000496291906561467,
+    "slope_ratio_mc_over_closed": 0.99979287557014,
+    "P_lyap_vs_emp_relerr": 0.005217274466301528,
+    "dres_omission_nrmse_by_t": {
+     "0.5": 0.00403424396729549,
+     "1.0": 0.005906990598814612,
+     "2.0": 0.007951854775214384,
+     "5.0": 0.012669038241562765
+    },
+    "dres_omission_nrmse_t5": 0.012669038241562765
+   },
+   "0.1": {
+    "hurwitz": true,
+    "kl_rate_closed_form": 0.0019872722077501253,
+    "kl_closed_by_T": {
+     "10.0": 0.01987272207750125,
+     "25.0": 0.049681805193753134,
+     "50.0": 0.09936361038750627,
+     "100.0": 0.19872722077501254
+    },
+    "kl_mc_by_T": {
+     "10.0": 0.01986602408828725,
+     "25.0": 0.04967822876601412,
+     "50.0": 0.09937189644527351,
+     "100.0": 0.19876031981750125
+    },
+    "mc_linear_fit_R2": 0.9999999995071303,
+    "mc_slope": 0.0019877282072036963,
+    "slope_ratio_mc_over_closed": 1.000229459986303,
+    "P_lyap_vs_emp_relerr": 0.005121139900605603,
+    "dres_omission_nrmse_by_t": {
+     "0.5": 0.00807421840961965,
+     "1.0": 0.011820523350837425,
+     "2.0": 0.0159219770683806,
+     "5.0": 0.02534980686475069
+    },
+    "dres_omission_nrmse_t5": 0.02534980686475069
+   },
+   "0.2": {
+    "hurwitz": true,
+    "kl_rate_closed_form": 0.007964036694804872,
+    "kl_closed_by_T": {
+     "10.0": 0.07964036694804873,
+     "25.0": 0.1991009173701218,
+     "50.0": 0.3982018347402436,
+     "100.0": 0.7964036694804872
+    },
+    "kl_mc_by_T": {
+     "10.0": 0.07982834416935528,
+     "25.0": 0.19957834522805667,
+     "50.0": 0.39885922530361295,
+     "100.0": 0.7970678966307053
+    },
+    "mc_linear_fit_R2": 0.9999998204446474,
+    "mc_slope": 0.007968579218538932,
+    "slope_ratio_mc_over_closed": 1.000570379558525,
+    "P_lyap_vs_emp_relerr": 0.005217755773206759,
+    "dres_omission_nrmse_by_t": {
+     "0.5": 0.016171096385557953,
+     "1.0": 0.023666765072750437,
+     "2.0": 0.031920057453282746,
+     "5.0": 0.05075906534725201
+    },
+    "dres_omission_nrmse_t5": 0.05075906534725201
+   }
+  },
+  "eps2_scaling_loglog_slope": 2.0013496439164373,
+  "VERDICT_3A": {
+   "prediction_if_true": "MC KL T-linear (R2>0.98), slope matches closed form (ratio 0.9-1.1), rate ~eps^2 (loglog slope ~2), omitting-D_res prediction error grows with eps.",
+   "refuted_if": "KL not T-linear, OR slope mismatch (ratio outside 0.9-1.1), OR D_res omission is costless at large eps.",
+   "mc_linear_R2_all>=0.98": true,
+   "slope_ratio_all_0.9_1.1": true,
+   "eps2_loglog_slope": 2.0013496439164373,
+   "eps2_ok_1.7_2.3": true,
+   "dres_omission_grows_with_eps": true,
+   "dres_omission_nrmse_t5_by_eps": {
+    "0.0": 0.0,
+    "0.02": 0.005066390607169798,
+    "0.05": 0.012669038241562765,
+    "0.1": 0.02534980686475069,
+    "0.2": 0.05075906534725201
+   },
+   "VERDICT": "SUPPORTED"
+  }
+ },
+ "EXP3B_lorenz96": {
+  "N": 40,
+  "dt": 0.05,
+  "F_grid": [
+   4.0,
+   8.0,
+   16.0
+  ],
+  "horizons": [
+   1,
+   5,
+   10,
+   20,
+   50
+  ],
+  "surrogate": "per-coordinate homogeneous rule; DIAGONAL=[1,x_i,x_i^2] (no coupling) vs COUPLED=local stencil incl. cross-products (can represent off-diagonal coupling). Linear Koopman was dropped: it cannot represent Lorenz-96 at any F, confounding the test.",
+  "per_F": {
+   "4.0": {
+    "nrmse_diagonal": {
+     "1": 0.17400048053375766,
+     "5": 0.7936351316007711,
+     "10": 1.2759000657145048,
+     "20": 1.5195285985847637,
+     "50": 1.1583115449335915
+    },
+    "nrmse_coupled": {
+     "1": 0.012156452981463436,
+     "5": 0.04807369491692585,
+     "10": 0.06377966173687542,
+     "20": 0.14660153826104272,
+     "50": 0.311951651725886
+    },
+    "advantage_diag_minus_coupled": {
+     "1": 0.1618440275522942,
+     "5": 0.7455614366838453,
+     "10": 1.2121204039776294,
+     "20": 1.372927060323721,
+     "50": 0.8463598932077054
+    },
+    "coupling_load_frac": 0.12714240937256213,
+    "note": "T>=10 rollouts diverge (chaos amplifies any fitted-map error) \u2014 judge at T=1/T=5."
+   },
+   "8.0": {
+    "nrmse_diagonal": {
+     "1": 0.22111105407284706,
+     "5": 1.1190645514899815,
+     "10": 1.4239233494897645,
+     "20": 1.0637642059286292,
+     "50": 0.9687997831866146
+    },
+    "nrmse_coupled": {
+     "1": 0.0437547006737346,
+     "5": 0.2637622098233108,
+     "10": 0.5891484580855332,
+     "20": 275.8089330337837,
+     "50": 979.980588252064
+    },
+    "advantage_diag_minus_coupled": {
+     "1": 0.17735635339911246,
+     "5": 0.8553023416666707,
+     "10": 0.8347748914042313,
+     "20": -274.7451688278551,
+     "50": -979.0117884688774
+    },
+    "coupling_load_frac": 0.23379526620309607,
+    "note": "T>=10 rollouts diverge (chaos amplifies any fitted-map error) \u2014 judge at T=1/T=5."
+   },
+   "16.0": {
+    "nrmse_diagonal": {
+     "1": 0.3393153037580068,
+     "5": 0.8773867553084558,
+     "10": 1.1588936029394783,
+     "20": 1.110446974702698,
+     "50": 0.8231215103045602
+    },
+    "nrmse_coupled": {
+     "1": 0.0968922444986069,
+     "5": 0.6510832458568647,
+     "10": 5.855903863148583,
+     "20": 808.1132181246768,
+     "50": 1000.0
+    },
+    "advantage_diag_minus_coupled": {
+     "1": 0.2424230592593999,
+     "5": 0.22630350945159106,
+     "10": -4.697010260209105,
+     "20": -807.0027711499741,
+     "50": -999.1768784896955
+    },
+    "coupling_load_frac": 0.3775982044292782,
+    "note": "T>=10 rollouts diverge (chaos amplifies any fitted-map error) \u2014 judge at T=1/T=5."
+   }
+  },
+  "VERDICT_3B": {
+   "prediction_if_true": "off-diagonal-capable (coupled) surrogate beats the diagonal one on Lorenz-96 (a system with KNOWN coupling), at every F (judged at the stable horizon T=1).",
+   "refuted_if": "coupled gives no advantage over diagonal at any F -> off-diagonal capacity buys nothing even where coupling provably exists.",
+   "advantage_diag_minus_coupled_T1_by_F": {
+    "4.0": 0.1618440275522942,
+    "8.0": 0.17735635339911246,
+    "16.0": 0.2424230592593999
+   },
+   "coupling_load_frac_by_F": {
+    "4.0": 0.12714240937256213,
+    "8.0": 0.23379526620309607,
+    "16.0": 0.3775982044292782
+   },
+   "coupled_beats_diagonal_all_F": true,
+   "note_F_monotonicity": "F sets forcing amplitude/chaoticity, not coupling FRACTION; do not expect the advantage to grow monotonically with F (see coupling_load_frac_by_F).",
+   "VERDICT": "SUPPORTED"
+  }
+ }
+}

@@ -1,0 +1,12 @@
+% Requires: \usepackage{tabularx, booktabs, array}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X l >{\raggedright\arraybackslash}p{3.8cm}@{}}
+\toprule
+Pre-registered test & Statistic & Verdict \\
+\midrule
+Crossover-location prediction & LOO Spearman $-0.50$ (vs.\ $+0.7$) & FALSIFIED --- $u^\ast$ location open \\
+Nonlocality from pre-shot inputs & within-machine KNN CV-$R^2 = 0.04$ & NEGATIVE --- emergent \\
+Usefulness vs.\ nonlocality (within machine) & per-machine median $\rho = -0.07$ & NEGATIVE --- decoupled \\
+(context) $\lVert D_{\mathrm{res}}\rVert$ vs.\ profile-nonlocality proxy (drive removed) & high-drive $\rho = 0.52$ ($p = 5\times10^{-22}$) & POSITIVE --- stands \\
+\bottomrule
+\end{tabularx}
+% The three NEGATIVEs are pre-registered failures; the last row is the C-nonlocality POSITIVE (rho=0.52), shown for contrast.

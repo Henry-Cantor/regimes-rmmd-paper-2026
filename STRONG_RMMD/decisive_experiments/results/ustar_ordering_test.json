@@ -1,0 +1,80 @@
+{
+ "VERDICT": "FAIL",
+ "LOO_spearman": -0.49999999999999994,
+ "LOO_MAE": 287.50241376421366,
+ "diagnostics": {
+  "spearman_sigma2_vs_xobs": -0.19999999999999998,
+  "spearman_b_vs_xobs": -0.7999999999999999,
+  "spearman_a_vs_xobs": 0.7999999999999999,
+  "sigma2_orders_of_magnitude": 4.985229523185833
+ },
+ "criteria": "PASS iff LOO Spearman >= 0.7 AND all predictions in omega_d range",
+ "omega_d_range_used": [
+  0.0,
+  3.0
+ ],
+ "n_scored": 5,
+ "table": [
+  {
+   "machine": "HL2A",
+   "a_m": 0.9430911020261293,
+   "b_m": -0.0007649327060600267,
+   "R2": 0.1386158409342787,
+   "sigma2_T1": 0.18379835453731894,
+   "x_obs": 0.205647,
+   "x_pred_LOO": 313.65454224933944,
+   "fitted_C": 3.8257496157972963,
+   "in_range": false,
+   "C_needed_for_inrange(a/sigma2)": 5.1311183084320895
+  },
+  {
+   "machine": "CMOD",
+   "a_m": 0.9437393702600688,
+   "b_m": -0.0017242628318089356,
+   "R2": 0.8806415286041376,
+   "sigma2_T1": 2.550633127805946e-06,
+   "x_obs": 0.248026,
+   "x_pred_LOO": 547.3235256055987,
+   "fitted_C": 3.8257496157972963,
+   "in_range": false,
+   "C_needed_for_inrange(a/sigma2)": 370002.00458929705
+  },
+  {
+   "machine": "NSTX",
+   "a_m": 0.9436960678254069,
+   "b_m": -0.0009973131280347001,
+   "R2": 0.8952446666813493,
+   "sigma2_T1": 0.24653439569243338,
+   "x_obs": 0.700668,
+   "x_pred_LOO": -323.7159241582525,
+   "fitted_C": 5.137385415065595,
+   "in_range": false,
+   "C_needed_for_inrange(a/sigma2)": 3.827847490306079
+  },
+  {
+   "machine": "EAST",
+   "a_m": 0.9490684090469134,
+   "b_m": -0.013214105212772977,
+   "R2": 0.8382289038344805,
+   "sigma2_T1": 0.000396155278732939,
+   "x_obs": 0.818367,
+   "x_pred_LOO": 71.70767924759554,
+   "fitted_C": 3.8257496157972963,
+   "in_range": false,
+   "C_needed_for_inrange(a/sigma2)": 2395.698000244775
+  },
+  {
+   "machine": "D3D",
+   "a_m": 0.9452484165707234,
+   "b_m": -0.005169984888205307,
+   "R2": 0.6573051871955717,
+   "sigma2_T1": 5.420721073398373e-06,
+   "x_obs": 1.148103,
+   "x_pred_LOO": 182.8298725602819,
+   "fitted_C": 3.8257496157972963,
+   "in_range": false,
+   "C_needed_for_inrange(a/sigma2)": 174376.8778676756
+  }
+ ],
+ "why": "sigma^2_m spans ~5 orders (CMOD 2.5e-6 .. NSTX 0.25) while a_m ~= 0.94 for all machines, so C*sigma^2_m ~= a_m (the in-range condition) needs a per-machine C spanning 5 orders -- no single global C works. DEEPER: spearman(sigma^2, x_obs) is also ~0, so this is NOT just a normalization bug -- the crossover ordering is not a monotone function of sigma^2 (or b), so no rescaling of sigma^2 rescues the formula. The theorem's crossover formula does not predict the observed crossovers; keep the mechanism regression + observed ordering as descriptive (Extended Data)."
+}

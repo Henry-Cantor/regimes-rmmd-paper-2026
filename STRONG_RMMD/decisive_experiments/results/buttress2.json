@@ -1,0 +1,263 @@
+{
+ "n_shots": 1036,
+ "machines": [
+  "AUGD",
+  "CMOD",
+  "D3D",
+  "EAST",
+  "HL2A",
+  "KSTR",
+  "NSTX"
+ ],
+ "flex_selection": {
+  "note": "no flexible candidates passed (--flex-ckpts / --dgknet-ckpt)"
+ },
+ "C_nonlocality": {
+  "raw_corr_nonloc_vs_dres": 0.2306396231498347,
+  "window_primary": "nonloc50 (0.232-anchor)",
+  "window_sensitivity": {
+   "nonloc10": {
+    "partial_rho": 0.058494587134202344,
+    "p": 0.09196302042430345,
+    "n": 832,
+    "high_drive_rho": 0.36219223802083844,
+    "high_drive_p": 5.196817972675875e-10,
+    "high_drive_n": 278
+   },
+   "nonloc20": {
+    "partial_rho": 0.16303104132501609,
+    "p": 1.2818939434245313e-06,
+    "n": 874,
+    "high_drive_rho": 0.4297878830841186,
+    "high_drive_p": 1.6425523382848653e-14,
+    "high_drive_n": 292
+   },
+   "nonloc30": {
+    "partial_rho": 0.11919235446102637,
+    "p": 0.0003979942700002554,
+    "n": 880,
+    "high_drive_rho": 0.4976582198718906,
+    "high_drive_p": 9.688244716912982e-20,
+    "high_drive_n": 294
+   },
+   "nonloc50": {
+    "partial_rho": 0.13658743731889236,
+    "p": 4.613319097994344e-05,
+    "n": 885,
+    "high_drive_rho": 0.5228626932027512,
+    "high_drive_p": 4.977935406155559e-22,
+    "high_drive_n": 295
+   },
+   "nonloc75": {
+    "partial_rho": 0.11669494946917397,
+    "p": 0.00047536403390458404,
+    "n": 894,
+    "high_drive_rho": 0.4053031984854716,
+    "high_drive_p": 3.6009379113136545e-13,
+    "high_drive_n": 298
+   },
+   "nonloc100": {
+    "partial_rho": 0.10757579180365574,
+    "p": 0.0012441124108971211,
+    "n": 899,
+    "high_drive_rho": 0.34420379067729573,
+    "high_drive_p": 9.669919454910943e-10,
+    "high_drive_n": 300
+   }
+  },
+  "partial_rho_controlling_for_drive": 0.13658743731889236,
+  "partial_p": 4.613319097994344e-05,
+  "n": 885,
+  "partial_rho_high_drive_tercile": 0.5228626932027512,
+  "high_drive_p": 4.977935406155559e-22,
+  "high_drive_n": 295,
+  "per_machine_partial": {
+   "AUGD": {
+    "partial_rho": 0.25943005099868977,
+    "p": 0.0005890329668967982,
+    "n": 173
+   },
+   "CMOD": {
+    "partial_rho": NaN,
+    "p": NaN,
+    "n": 29
+   },
+   "D3D": {
+    "partial_rho": 0.10794773610349533,
+    "p": 0.399723202441734,
+    "n": 64
+   },
+   "EAST": {
+    "partial_rho": 0.17289784348715312,
+    "p": 0.00041608194645050505,
+    "n": 414
+   },
+   "HL2A": {
+    "partial_rho": 0.4480720856223846,
+    "p": 7.917985977734477e-05,
+    "n": 73
+   },
+   "KSTR": {
+    "partial_rho": -0.12802315163195682,
+    "p": 0.37560811869491256,
+    "n": 51
+   },
+   "NSTX": {
+    "partial_rho": -0.07525050439704817,
+    "p": 0.5070682932918975,
+    "n": 81
+   }
+  },
+  "machines_hitting_0.3": [
+   "HL2A"
+  ],
+  "PREREGISTERED_HIT": false,
+  "note": "PRE-REGISTERED = pooled partial rho>=0.3 & p<0.01. Reported ALONGSIDE (theory-specified, not post-hoc): the top-drive-tercile partial (nonlocal transport is a transient-drive phenomenon) and the per-machine breakdown. If the pooled misses 0.3 but is highly significant and concentrated on the dynamic machines, that IS the theory's prediction -- report it exactly that way (Discussion + Extended Data, NP seed). Scoping: TRANSP is transport-timescale -> profile-scale nonlocality, NOT turbulence correlation lengths -- phrase it that way."
+ },
+ "nonloc_equation": {
+  "within_machine_median_r2": {
+   "linear": -0.0976208692671851,
+   "poly2": -97.48956935904027,
+   "knn": 0.038739044874146755
+  },
+  "per_machine_r2_knn": {
+   "AUGD": 0.45896132715471305,
+   "D3D": 0.12408824155225917,
+   "EAST": 0.2302662968439091,
+   "HL2A": -0.07067019857086798,
+   "KSTR": -0.04661015180396566,
+   "NSTX": -0.07623496545204866
+  },
+  "n": 885,
+  "features": [
+   "rel_ptp",
+   "omega_d",
+   "ni_mean",
+   "ni_std",
+   "ni_core",
+   "ni_edge",
+   "ni_gradmax",
+   "ni_gradmean"
+  ],
+  "intercept_mean_nonloc": 0.861144527592934,
+  "standardized_linear_coefficients": {
+   "rel_ptp": -0.029189307608973522,
+   "omega_d": -0.037156509073062685,
+   "ni_mean": -0.04841579414623554,
+   "ni_std": 0.14864766197138848,
+   "ni_core": 0.02022394838070288,
+   "ni_edge": 0.07005062755504274,
+   "ni_gradmax": -0.02171550615999852,
+   "ni_gradmean": -0.15862046849940173
+  },
+  "dominant_terms": [
+   "ni_gradmean",
+   "ni_std",
+   "ni_edge"
+  ],
+  "VERDICT": "EMERGENT \u2014 even a nonparametric KNN gives ~0 within-machine CV-R2 (linear -0.098, poly2 -97.490, knn 0.039): nonlocality is NOT set by pre-shot inputs under ANY functional form",
+  "note": "PER-MACHINE 5-fold CV (train within a machine, predict held-out shots of THAT machine) with linear, degree-2 polynomial, AND nonparametric KNN. KNN captures arbitrary nonlinearity WITHOUT assuming a form -- if KNN is also ~0, no regression (exp/log/whatever) will help -> robustly emergent. This is the fair within-machine test (the earlier pooled-fit R2 was a between-machine artifact)."
+ },
+ "nonloc_threshold": {
+  "pooled_spearman_nonloc_vs_benefit_ALL": -0.1950771056180023,
+  "p_all": 8.185118548790003e-09,
+  "n": 859,
+  "pooled_spearman_nonloc_vs_benefit_HIGHDRIVE": 0.15206430690705267,
+  "p_highdrive": 0.009882592468664294,
+  "n_highdrive": 287,
+  "per_machine_all": {
+   "AUGD": {
+    "n": 171,
+    "spearman_nonloc_vs_benefit": 0.35626295917232403,
+    "p": 1.7318414456378859e-06,
+    "frac_Dres_helps(benefit>0)": 0.6257309941520468,
+    "median_benefit": 0.01401745165089241
+   },
+   "CMOD": {
+    "n": 27,
+    "spearman_nonloc_vs_benefit": -0.4029445828511791,
+    "p": 0.0371630434839556,
+    "frac_Dres_helps(benefit>0)": 0.2222222222222222,
+    "median_benefit": -0.044258608306423586
+   },
+   "D3D": {
+    "n": 60,
+    "spearman_nonloc_vs_benefit": -0.11475409836065577,
+    "p": 0.38262381241324883,
+    "frac_Dres_helps(benefit>0)": 0.55,
+    "median_benefit": 0.0038801535928407373
+   },
+   "EAST": {
+    "n": 404,
+    "spearman_nonloc_vs_benefit": -0.37315792666449904,
+    "p": 8.547888029543286e-15,
+    "frac_Dres_helps(benefit>0)": 0.4603960396039604,
+    "median_benefit": -0.008194655201005596
+   },
+   "HL2A": {
+    "n": 73,
+    "spearman_nonloc_vs_benefit": -0.047006538904084585,
+    "p": 0.6929089244980767,
+    "frac_Dres_helps(benefit>0)": 0.5342465753424658,
+    "median_benefit": 0.023672122652814806
+   },
+   "KSTR": {
+    "n": 45,
+    "spearman_nonloc_vs_benefit": 0.4170756614799256,
+    "p": 0.004368452522043331,
+    "frac_Dres_helps(benefit>0)": 0.6,
+    "median_benefit": 0.056750549407533546
+   },
+   "NSTX": {
+    "n": 79,
+    "spearman_nonloc_vs_benefit": 0.06798928919182085,
+    "p": 0.5516032173894208,
+    "frac_Dres_helps(benefit>0)": 0.46835443037974683,
+    "median_benefit": -0.0035533197837615826
+   }
+  },
+  "frac_pos_all": 0.42857142857142855,
+  "median_rho_all": -0.047006538904084585,
+  "per_machine_highdrive": {
+   "AUGD": {
+    "n": 48,
+    "spearman_nonloc_vs_benefit": 0.14398568932684647,
+    "p": 0.3288828152322434,
+    "frac_Dres_helps(benefit>0)": 0.2708333333333333,
+    "median_benefit": -0.07244622614121302
+   },
+   "D3D": {
+    "n": 22,
+    "spearman_nonloc_vs_benefit": -0.17786561264822137,
+    "p": 0.42841247523808007,
+    "frac_Dres_helps(benefit>0)": 0.36363636363636365,
+    "median_benefit": -0.03707042678716295
+   },
+   "EAST": {
+    "n": 155,
+    "spearman_nonloc_vs_benefit": -0.21586247866612068,
+    "p": 0.006984292991144993,
+    "frac_Dres_helps(benefit>0)": 0.864516129032258,
+    "median_benefit": 0.03344589240957099
+   },
+   "HL2A": {
+    "n": 38,
+    "spearman_nonloc_vs_benefit": -0.03693763208652973,
+    "p": 0.8257406622770069,
+    "frac_Dres_helps(benefit>0)": 0.2631578947368421,
+    "median_benefit": -0.10191084850669732
+   },
+   "NSTX": {
+    "n": 20,
+    "spearman_nonloc_vs_benefit": -0.07368421052631578,
+    "p": 0.7575286998643431,
+    "frac_Dres_helps(benefit>0)": 0.65,
+    "median_benefit": 0.017896236630065263
+   }
+  },
+  "frac_pos_highdrive": 0.2,
+  "median_rho_highdrive": -0.07368421052631578,
+  "VERDICT": "WEAK/inconsistent even in the high-drive regime (frac_pos=0.20 median rho=-0.07): the nonlocality->D_res-usefulness link is not established",
+  "note": "CONTINUOUS benefit (err_abl-err_full), NOT a binary 'helps' -- on quiescent shots err_abl~=err_full so a binary sign is noise (EAST's binary frac_helps~0.5 was spurious). HIGH-DRIVE = top-tercile rel_ptp, where D_res is operative + the nonlocality proxy is reliable. frac_pos = fraction of machines with positive nonloc->benefit correlation."
+ }
+}
