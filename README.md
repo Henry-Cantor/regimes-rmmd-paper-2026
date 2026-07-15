@@ -1,11 +1,11 @@
-# STRONG-RMMD
+# RMMD
 
 A physics-informed machine-learning surrogate for tokamak ion-density (NI) transport with zero-shot
 transfer to held-out machines. The model is a physics-keyed metriplectic–Koopman latent operator
 `L = S − D_diag − D_res` with a resonance-mediated off-diagonal term `D_res`, decoded through a
 conservative, contraction-stable transport step so autoregressive rollouts do not drift. Novelty comes in the model structure via physics-keying and the use of computed frequencies, and several discoveries made in the experiment.
 
-This repository reproduces every figure and table in the paper.
+This repository reproduces every figure and table in the paper. The name "STRONG" in some of the folder names refers to an older acronym of the project (Spectral Thermodynamic and Resonance Operator for New Geometries).
 
 ## Layout
 
