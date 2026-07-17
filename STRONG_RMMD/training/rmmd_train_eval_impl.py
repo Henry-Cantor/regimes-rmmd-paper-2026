@@ -1664,7 +1664,6 @@ def _make_model(
     hybrid_skip_hidden: int = 512,
 ):
     # Baseline models (mlp/lstm/node) share the RMMD forward/harness contract. baseline_latent_dim=128 default;
-    # ~512 gives a capacity-matched baseline (~24M params, near full RMMD's 26M).
     _mt = str(model_type).lower()
     _rmmd_kwargs = dict(
         state_dim=state_dim, latent_dim=latent_dim,
